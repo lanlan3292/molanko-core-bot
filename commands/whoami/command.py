@@ -1,4 +1,4 @@
-from core.context import BotContext
+from ...context import BotContext
 
 class WhoAmICommand:
     async def execute(self, ctx: BotContext) -> None:

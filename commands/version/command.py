@@ -1,5 +1,5 @@
-from core.context import BotContext
-from core.commands.version.get_version import VersionService
+from ...context import BotContext
+from ...commands.version.get_version import VersionService
 from utils.i18n import t
 
 class VersionCommand:
