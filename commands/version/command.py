@@ -1,5 +1,5 @@
 from core.context import BotContext
-from core.commands.version.version import VersionService
+from core.commands.version.get_version import VersionService
 from utils.i18n import t
 
 

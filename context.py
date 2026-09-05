@@ -1,4 +1,11 @@
 from abc import ABC, abstractmethod
+from dataclasses import dataclass
+
+
+@dataclass
+class UserInfo:
+    id: str
+    name: str
 
 
 class BotContext(ABC):
@@ -9,5 +16,9 @@ class BotContext(ABC):
     @property
     @abstractmethod
     def locale(self) -> str:
-        """返回语言代码，如 'zh-CN' / 'en'"""
+        ...
+
+    @property
+    @abstractmethod
+    def user(self) -> UserInfo:
         ...
