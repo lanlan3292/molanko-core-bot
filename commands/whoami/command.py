@@ -1,6 +1,5 @@
 from core.context import BotContext
 
-
 class WhoAmICommand:
     async def execute(self, ctx: BotContext) -> None:
         user = ctx.user

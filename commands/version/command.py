@@ -2,7 +2,6 @@ from core.context import BotContext
 from core.commands.version.get_version import VersionService
 from utils.i18n import t
 
-
 class VersionCommand:
     def __init__(self, service: VersionService | None = None):
         self.service = service or VersionService()
